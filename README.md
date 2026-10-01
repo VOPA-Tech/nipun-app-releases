@@ -1,6 +1,6 @@
 # 📱 NIPUN App Releases
 
-Central release index for the **NIPUN Android Application** across DEV, STAGE, and PROD environments.
+Central release index for the **NIPUN Android Application** across DEV, STAGE, and PROD environments. 
 
 > APK files are stored on Google Drive. This repository tracks the latest distributed builds and release notes.
 
