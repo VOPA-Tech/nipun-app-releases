@@ -1,0 +1,124 @@
+<!-- Team-only page: keep it out of search engines -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+
+<!-- Apply saved theme before first paint to avoid a flash -->
+<script>
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem("theme"); } catch (e) {}
+    var dark = saved ? saved === "dark" : window.matchMedia("(prefers-color-scheme: dark)").matches;
+    document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
+  })();
+</script>
+
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #24292e;
+    --muted: #6a737d;
+    --link: #0366d6;
+    --border: #dfe2e5;
+    --rule: #eaecef;
+    --subtle-bg: #f6f8fa;
+    --code-bg: rgba(27, 31, 35, 0.05);
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d1117;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --link: #58a6ff;
+    --border: #30363d;
+    --rule: #21262d;
+    --subtle-bg: #161b22;
+    --code-bg: rgba(110, 118, 129, 0.4);
+  }
+
+  body { background: var(--bg); color: var(--text); }
+  a { color: var(--link); }
+  .markdown-body { color: var(--text); }
+  .markdown-body h1, .markdown-body h2 { border-bottom-color: var(--rule); }
+  .markdown-body hr { background-color: var(--rule); }
+  .markdown-body blockquote { color: var(--muted); border-left-color: var(--border); }
+  .markdown-body code { background-color: var(--code-bg); }
+  .markdown-body pre, .markdown-body .highlight pre { background-color: var(--subtle-bg); color: var(--text); }
+  .markdown-body table tr { background-color: var(--bg); border-top-color: var(--border); }
+  .markdown-body table tr:nth-child(2n) { background-color: var(--subtle-bg); }
+  .markdown-body table th, .markdown-body table td { border-color: var(--border); }
+  .footer { color: var(--muted); border-top-color: var(--rule); }
+
+  /* Wide releases table scrolls sideways on phones instead of overflowing */
+  .markdown-body table { display: block; width: 100%; overflow-x: auto; }
+
+  /* Mermaid diagrams: centered, scroll if wider than screen */
+  .markdown-body pre.mermaid { background: transparent; text-align: center; overflow-x: auto; }
+
+  /* Theme toggle sits at the right end of the page title */
+  .markdown-body h1.has-theme-toggle { display: flex; align-items: center; gap: 12px; }
+  #theme-toggle {
+    margin-left: auto;
+    flex-shrink: 0;
+    padding: 6px 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: var(--text);
+    background: var(--subtle-bg);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+  }
+</style>
+
+<!-- Light/dark toggle + render ```mermaid code fences as diagrams -->
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+
+  const root = document.documentElement;
+  const isDark = () => root.getAttribute("data-theme") === "dark";
+
+  document.querySelectorAll("pre > code.language-mermaid").forEach((code) => {
+    const block = code.closest("div.language-mermaid") || code.parentElement;
+    const diagram = document.createElement("pre");
+    diagram.className = "mermaid";
+    diagram.dataset.source = code.textContent;
+    block.replaceWith(diagram);
+  });
+
+  async function renderDiagrams() {
+    const diagrams = document.querySelectorAll("pre.mermaid");
+    diagrams.forEach((el) => {
+      el.removeAttribute("data-processed");
+      el.textContent = el.dataset.source;
+    });
+    mermaid.initialize({ startOnLoad: false, theme: isDark() ? "dark" : "default" });
+    await mermaid.run({ nodes: diagrams });
+  }
+
+  const toggle = document.createElement("button");
+  toggle.id = "theme-toggle";
+  const label = () => {
+    toggle.textContent = isDark() ? "☀️" : "🌙";
+    toggle.title = isDark() ? "Switch to light mode" : "Switch to dark mode";
+  };
+  toggle.addEventListener("click", () => {
+    const next = isDark() ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+    label();
+    renderDiagrams();
+  });
+  label();
+  // Primer adds its own site-title <h1> (no id) above the README; hide it so
+  // the README's "NIPUN App Releases" heading (has an id) is the only title.
+  document.querySelectorAll(".markdown-body > h1:not([id])").forEach((h) => h.remove());
+  const title = document.querySelector(".markdown-body h1[id]") || document.querySelector(".markdown-body h1");
+  if (title) {
+    title.classList.add("has-theme-toggle");
+    title.appendChild(toggle);
+  } else {
+    Object.assign(toggle.style, { position: "fixed", top: "16px", right: "16px", zIndex: "10" });
+    document.body.appendChild(toggle);
+  }
+
+  await renderDiagrams();
+</script>
