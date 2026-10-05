@@ -1,16 +1,16 @@
-# 📱 NIPUN App Releases
+# NIPUN App Releases
 
 Central release index for the **NIPUN Android Application** across DEV, STAGE, and PROD environments. 
 
 > APK files are stored on Google Drive. This repository tracks the latest distributed builds and release notes.
 
-### ▶️ Play Store
+### Play Store
 
 [Download NIPUN App from Google Play Store](https://play.google.com/store/apps/details?id=com.nipun&hl=en_IN)
 
 ---
 
-## 📌 Current Releases
+## Current Releases
 
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
@@ -18,7 +18,7 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 | 🟠 **STAGE** | `1.7.5` | `10066` | Release | 01 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1wFvFFCMza3WtpcQr__xZU2T6g2yZ2Tzo/view?usp=drive_link) |
 | 🟢 **PROD** | `1.7.4` | `10065` | Release | 24 Sep 2026 | ✅ Live | [⬇️ Download](https://drive.google.com/file/d/1ZyD6p_wThZPCCpVCJuTj2Pr2_YyIcphM/view?usp=sharing) |
 
-## 🚦 Release Flow
+## Release Flow
 
 ```mermaid
 flowchart LR
@@ -40,28 +40,28 @@ flowchart LR
 
 ---
 
-## 🎯 Next Play Store Release
+## Targeted Release
 
 **Source:** 🟠 STAGE  
 **Target:** Oct 2nd Week  
-**Status:** 🔍 QA / NIPUN Team Testing
+**Status:** QA / NIPUN Team Testing
 
 > The approved STAGE build will be promoted to PROD and submitted to the Play Store.
 
 ---
 
-## 📝 Current Release Notes
+## Release Notes
 
 **Environment:** 🟠 STAGE  
 **Release Type:** Release Version
 
-#### ✨ What's New
+#### What's New
 
 - Updated assessment flow
 - Improved student progress flow
 - Updated assessment-related validations
 
-#### 🐛 Bug Fixes
+#### Bug Fixes
 
 - Fixed login-related issues
 - Fixed assessment submission issues
@@ -69,7 +69,7 @@ flowchart LR
 
 ---
 
-## 🧪 Issue Reporting - Linear
+## Issue Reporting - Linear
 
 Include the following when reporting an issue:
 
@@ -89,7 +89,7 @@ Screenshot / Video:
 
 ---
 
-## 🔄 Developer's Note: Updating a Release
+## Developer's Note: Updating a Release
 
 For every new build:
 
