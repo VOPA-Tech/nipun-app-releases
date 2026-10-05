@@ -14,8 +14,8 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
-| 🔵 **DEV** | `1.7.4` | `10065` | Release | 26 Sep 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/18NN8ta8iHjuwlHyUfaniuBPLQSJzWvkp/view?usp=drive_link) |
-| 🟠 **STAGE** | `1.7.5` | `10066` | Release | 01 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1wFvFFCMza3WtpcQr__xZU2T6g2yZ2Tzo/view?usp=drive_link) |
+| 🔵 **DEV** | `1.7.5` | `10067` | Release | 05 Oct 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1bxwQAMt9u5X8dEl2_ESimcQKXvccquLJ/view?usp=drive_link) |
+| 🟠 **STAGE** | `1.7.5` | `10067` | Release | 05 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1_6fMhYKAbsSnb4CoampryVNnSgxH8dsv/view?usp=drive_link) |
 | 🟢 **PROD** | `1.7.4` | `10065` | Release | 24 Sep 2026 | ✅ Live | [⬇️ Download](https://drive.google.com/file/d/1ZyD6p_wThZPCCpVCJuTj2Pr2_YyIcphM/view?usp=sharing) |
 
 ## Release Flow
@@ -52,7 +52,7 @@ flowchart LR
 
 ## Release Notes
 
-**Environment:** 🟠 STAGE  
+**Environment:** 🔵 DEV + 🟠 STAGE  
 **Release Type:** Release Version
 
 #### What's New
@@ -60,6 +60,7 @@ flowchart LR
 - Updated assessment flow
 - Improved student progress flow
 - Updated assessment-related validations
+- Teacher assessment testing
 
 #### Bug Fixes
 
