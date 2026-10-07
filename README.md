@@ -15,7 +15,7 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
 | 🔵 **DEV** | `1.7.5` | `10067` | Release | 05 Oct 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1bxwQAMt9u5X8dEl2_ESimcQKXvccquLJ/view?usp=drive_link) |
-| 🟠 **STAGE** | `1.7.5` | `10067` | Release | 05 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1_6fMhYKAbsSnb4CoampryVNnSgxH8dsv/view?usp=drive_link) |
+| 🟠 **STAGE** | `1.7.5` | `10067` | Release | 07 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1shB4XcEe2I2FNs8cRTEvjDzRwGW0sCgz/view?usp=sharing) |
 | 🟢 **PROD** | `1.7.4` | `10065` | Release | 24 Sep 2026 | ✅ Live | [⬇️ Download](https://drive.google.com/file/d/1ZyD6p_wThZPCCpVCJuTj2Pr2_YyIcphM/view?usp=sharing) |
 
 ## Release Flow
@@ -61,12 +61,14 @@ flowchart LR
 - Improved student progress flow
 - Updated assessment-related validations
 - Teacher assessment testing
+- Integrated student progress timeline v2 API's
 
 #### Bug Fixes
 
 - Fixed login-related issues
 - Fixed assessment submission issues
 - General performance improvements
+- Fixed student progress timeline issues
 
 ---
 
@@ -109,4 +111,4 @@ git push
 ---
 
 **Maintained by:** VOPA Technology Team  
-**Last Updated:** 05 Oct 2026
+**Last Updated:** 07 Oct 2026
