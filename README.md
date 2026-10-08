@@ -72,6 +72,57 @@ flowchart LR
 - General performance improvements
 - Fixed student progress timeline issues
 
+#### Features To Be Tested
+
+**Headmaster**
+
+- शाळेची माहिती (School Information)
+- माझ्या शाळेतील शिक्षक (Teachers in My School)
+- वर्गनिहाय शिक्षक नोंदणी करा (Assign Teachers to Class)
+- AI द्वारा वाचन सराव
+- निपुण संवादिका (Social Media)
+- विद्यार्थ्यांचे मूल्यांकन तपशील (Student Assessment Timeline)
+- Nipun Games
+
+**Teacher**
+
+- पालकांचे फोन क्रमांक अद्ययावत करा (Update Parents Phone Number)
+- AI द्वारा वाचन सराव
+- निपुण संवादिका (Social Media)
+- Assessment flow
+- विद्यार्थ्यांचे मूल्यांकन तपशील (Student Assessment Timeline)
+- Nipun Games
+
+**Parent**
+
+- निपुण संवादिका (Social Media)
+- AI द्वारा वाचन सराव
+- Notification
+- Profile
+- Nipun Games
+
+**Admin**
+
+- पर्यवेक्षकांसाठी विविध अहवाल (Reports)
+- AI द्वारा वाचन सराव
+- निपुण संवादिका (Social Media)
+- विद्यार्थ्यांचे मूल्यांकन तपशील (Student Assessment Timeline)
+- Nipun Games
+
+#### Features Not To Be Tested
+
+**All Roles**
+
+- Audio Guide
+- शाळेचे विश्लेषण पहा (School Analysis)
+- Learning material
+
+**Parent**
+
+- My child
+- Student progress timeline
+- पुनर्रचनी सुरू करा
+
 ---
 
 ## Issue Reporting - Linear
