@@ -15,7 +15,7 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
 | 🔵 **DEV** | `1.7.5` | `10067` | Debug | 08 Oct 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/16-JcL-tZR9nxEjQcyt5gjJ86EetChf-G/view?usp=drive_link) |
-| 🟠 **STAGE** | `1.7.51` | `10067` | Release | 08 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1riDNY_qT5VDRIstBjmslJReMFKecH5Oh/view?usp=sharing) |
+| 🟠 **STAGE** | `1.7.51` | `10068` | Release | 12 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1-F34ijXVfX00H7qKw1qxr-mTUv5u_m3y/view?usp=sharing) |
 | 🟢 **PROD** | `1.7.51` | `10065` | Release | 24 Sep 2026 | ✅ Live | [⬇️ Download](https://drive.google.com/file/d/1GNUySi0Wv6fQmrBq5CReyJpHIyuycNPa/view?usp=sharing) |
 
 ## Release Flow
@@ -72,6 +72,7 @@ flowchart LR
 - Fixed assessment submission issues
 - General performance improvements
 - Fixed student progress timeline issues
+- Fixed parent login crash use
 
 #### Features To Be Tested
 
@@ -165,4 +166,4 @@ git push
 ---
 
 **Maintained by:** VOPA Technology Team  
-**Last Updated:** 08 Oct 2026
+**Last Updated:** 12 Oct 2026
