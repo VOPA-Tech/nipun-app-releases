@@ -17,6 +17,8 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 | 🔵 **DEV** | `1.7.52` | `10069` | Debug | 22 Oct 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1Hvg-bOoWCTnd2ivi5U4C-aBOB_bnFq1T/view?usp=sharing) |
 | 🟠 **STAGE** | `1.7.52` | `10069` | Release | 22 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/115tRYWWdAadl9DgUCnrVNbzipAKceKfG/view?usp=sharing) |
 | 🟢 **PROD** | `1.7.51` | `10068` | Release | 12 Oct 2026 | ✅ Live | [⬇️ Download](https://drive.google.com/file/d/1395_UtfKOHPKAcYEBDh0kqr0_ipfRgsL/view?usp=sharing) |
+| 🟣 **ESDS** | `1.7.53` | `10070` | Release | 24 Oct 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1SJw-K9aqi2Wg4xtFY3gVUxMLNGahwaFc/view?usp=drive_link) |
+
 
 ## Release Flow
 
@@ -42,7 +44,7 @@ flowchart LR
 
 ## Targeted Release
 
-**Source:** 🟠 STAGE  
+**Source:** 🟣 ESDS  
 **Target:** Oct 2nd Week  
 **Status:** QA / NIPUN Team Testing
 
@@ -52,92 +54,40 @@ flowchart LR
 
 ## Release Notes
 
-**Environment:** 🟠 STAGE  
+**Environment:** 🟣 ESDS
 **Release Type:** Release Version
 
 #### What's New
 
-- Updated assessment flow - Sequence arranged for all subjects
-- Improved student progress timeline flow to view last academic year data (Production)
-- Disabled Tour guide on production
-- Updated assessment-related validations
-- Teacher assessment testing
-- Integrated student progress timeline v2 API's
-- Student list: Remaining / Assessed / All tabs (search removed)
-- Class card: separate action buttons instead of whole-card tap
+- ESDS BASS_URL change
 
 #### Bug Fixes
 
-- Fixed login-related issues
-- Fixed assessment submission issues
-- General performance improvements
-- Fixed student progress timeline issues
-- Fixed parent login crash use
-
-**Environment:** 🟢 PROD  
-**Release Type:** Release Version
-
-#### What's New
-
-- Improved student progress timeline flow to view last academic year data (Production)
-
-
-#### Bug Fixes
-
-- Fixed student progress timeline issues
-- Fixed parent login crash use
+- 
 
 #### Features To Be Tested
 
 **Headmaster**
 
-- शाळेची माहिती (School Information)
-- माझ्या शाळेतील शिक्षक (Teachers in My School)
-- वर्गनिहाय शिक्षक नोंदणी करा (Assign Teachers to Class)
-- AI द्वारा वाचन सराव
-- निपुण संवादिका (Social Media)
-- विद्यार्थ्यांचे मूल्यांकन तपशील (Student Assessment Timeline)
-- Nipun Games
+- Everything
 
 **Teacher**
 
-- पालकांचे फोन क्रमांक अद्ययावत करा (Update Parents Phone Number)
-- AI द्वारा वाचन सराव
-- निपुण संवादिका (Social Media)
-- Assessment flow
-- विद्यार्थ्यांचे मूल्यांकन तपशील (Student Assessment Timeline)
-- Nipun Games
-- Assessment (Async flow with fallback )
+- Everything
 
 **Parent**
 
-- निपुण संवादिका (Social Media)
-- AI द्वारा वाचन सराव
-- Notification
-- Profile
-- Nipun Games
+- Everything
 
 **Admin**
 
-- पर्यवेक्षकांसाठी विविध अहवाल (Reports)
-- AI द्वारा वाचन सराव
-- निपुण संवादिका (Social Media)
-- विद्यार्थ्यांचे मूल्यांकन तपशील (Student Assessment Timeline)
-- Nipun Games
+- Everything
 
 #### Features Not To Be Tested
 
 **All Roles**
 
-- Audio Guide
-- शाळेचे विश्लेषण पहा (School Analysis)
-- Learning material
-
-**Parent**
-
-- My child
-- Student progress timeline
-- पुनर्रचनी सुरू करा
+- Images might not load as CDN still need to be setup on the ESDS infra.
 
 ---
 
@@ -180,4 +130,4 @@ git push
 ---
 
 **Maintained by:** VOPA Technology Team  
-**Last Updated:** 22 Oct 2026
+**Last Updated:** 08 Oct 2026
