@@ -129,5 +129,4 @@ git push
 
 ---
 
-**Maintained by:** VOPA Technology Team  
-**Last Updated:** 08 Oct 2026
+**Maintained by:** VOPA Technology Team
