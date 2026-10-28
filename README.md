@@ -15,7 +15,7 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
 | 🔵 **DEV** | `1.7.52` | `10069` | Debug | 22 Oct 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1Hvg-bOoWCTnd2ivi5U4C-aBOB_bnFq1T/view?usp=sharing) |
-| 🟠 **STAGE** | `1.7.52` | `10069` | Release | 22 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/115tRYWWdAadl9DgUCnrVNbzipAKceKfG/view?usp=sharing) |
+| 🟠 **STAGE** | `1.7.53` | `10069` | Release | 28 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1dvGL6zvAUThgyLgR2csGwSEcYA36gSLe/view?usp=sharing) |
 | 🟢 **PROD** | `1.7.51` | `10068` | Release | 12 Oct 2026 | ✅ Live | [⬇️ Download](https://drive.google.com/file/d/1395_UtfKOHPKAcYEBDh0kqr0_ipfRgsL/view?usp=sharing) |
 | 🟣 **ESDS** | `1.7.53` | `10070` | Release | 24 Oct 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1SJw-K9aqi2Wg4xtFY3gVUxMLNGahwaFc/view?usp=drive_link) |
 
@@ -59,7 +59,14 @@ flowchart LR
 
 #### What's New
 
-- ESDS BASS_URL change
+
+- My school feature - added two sections search My school & Other school details
+- Dashboard tiles UI improvements
+- Fixed semi-English checkbox issue in AssignTeacher feature
+- ORF UI improvements
+- Student Timeline - Added separate tabs for last & current academic year
+- Renamed tab My School as "तुमच्या शाळेची माहिती"
+- UI improvements of 6U form upload
 
 #### Bug Fixes
 
@@ -129,4 +136,5 @@ git push
 
 ---
 
-**Maintained by:** VOPA Technology Team
+**Maintained by:** VOPA Technology Team  
+**Last Updated:** 28 Oct 2026
