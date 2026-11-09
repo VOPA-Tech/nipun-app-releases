@@ -16,7 +16,7 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
-| 🟣 **ESDS DEV** | `1.7.53` | `10070` | Release | 24 Oct 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1SJw-K9aqi2Wg4xtFY3gVUxMLNGahwaFc/view?usp=drive_link) |
+| 🟣 **ESDS DEV** | `1.7.54` | `10070` | Release | 04 Nov 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1XN0hisKypKD1I50svrL7nfu67U6T5SAc/view?usp=sharing) |
 | 🟠 **ESDS STAGE** | `1.7.55` | `10070` | Release | 09 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1Jrpi7nra3yAe6Q1qSV2q0p63TnxkhASt/view?usp=drive_link) |
 
 
@@ -25,8 +25,8 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
 | 🔵 **DEV** | `1.7.52` | `10069` | Debug | 22 Oct 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1Hvg-bOoWCTnd2ivi5U4C-aBOB_bnFq1T/view?usp=sharing) |
-| 🟠 **STAGE** | `1.7.52` | `10069` | Release | 22 Oct 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/115tRYWWdAadl9DgUCnrVNbzipAKceKfG/view?usp=sharing) |
-| 🟢 **PROD** | `1.7.51` | `10068` | Release | 12 Oct 2026 | ✅ Live | [⬇️ Download](https://drive.google.com/file/d/1395_UtfKOHPKAcYEBDh0kqr0_ipfRgsL/view?usp=sharing) |
+| 🟠 **STAGE** | `1.7.53` | `10069` | Release | 02 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1CTGxSbmx4j7RWS-5TuNJ-Dj1EONxHLfG/view?usp=sharing) |
+| 🟢 **PROD** | `1.7.53` | `10069` | Release | 02 Nov 2026 | ✅ Live | [⬇️ Download](https://drive.google.com/file/d/10JzS1_LpOxYpUWviU0n4OtGhaRAgjUDs/view?usp=sharing) |
 
 
 ## Release Flow
@@ -71,13 +71,19 @@ flowchart LR
 
 #### What Changed
 
+- My school feature - added two sections search My school & Other school details
+- Dashboard tiles UI improvements
+- Fixed semi-English checkbox issue in AssignTeacher feature
+- ORF UI improvements
+- Student Timeline - Added separate tabs for last & current academic year
+- Renamed tab My School as "तुमच्या शाळेची माहिती"
+- UI improvements of 6U form upload
+
 1. **Pictures, audio and animations load differently.** The app's way of fetching media (images, audio, animations) was rebuilt. The old loaders were deleted. This touches almost every screen, so it carries the most risk.
 2. **Server-down handling is new.** The app now checks server health and shows a maintenance screen or a warning pop-up when something is down.
 3. **Assessments.** Absent students show in red. Teachers can open an absent student's record. Offline schools now see the question on the teacher-selection screen. Completion is confirmed after the check finishes in the background. Multiple-choice labels were renamed to "पर्यायी प्रश्न" and "बहुपर्यायी प्रश्न". Escaped line breaks (`\n`) no longer show in question text.
 4. **Blogs.** Fixed the last Marathi word being cut off on Android. Blog cards, list and pages use the new image loader.
 5. **Smaller items.** Image compression was improved. The Games web page now works with the new test servers. The About Us links and the admin School Info page were fixed. The home banner no longer re-renders in a loop. The maintenance animation was fixed.
-
-#### Features To Be Tested (highest risk first)
 
 **1. Pictures, audio and animations everywhere**
 
