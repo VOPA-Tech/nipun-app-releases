@@ -17,7 +17,7 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
 | 🟣 **ESDS DEV** | `1.7.54` | `10070` | Release | 04 Nov 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1XN0hisKypKD1I50svrL7nfu67U6T5SAc/view?usp=sharing) |
-| 🟠 **ESDS STAGE** | `1.7.55` | `10070` | Release | 12 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1R-iy03E2Mx5kmp72dixZjG3_9wIa-ZJt/view?usp=sharing) |
+| 🟠 **ESDS STAGE** | `1.7.56` | `10070` | Release | 12 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/18orOSFqu9gUohX0jc7ij2E6D2A-GTzmG/view?usp=sharing) |
 
 
 ### VOPA-AWS
