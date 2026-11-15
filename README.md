@@ -17,7 +17,7 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
 | 🟣 **ESDS DEV** | `1.7.54` | `10070` | Release | 04 Nov 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1XN0hisKypKD1I50svrL7nfu67U6T5SAc/view?usp=sharing) |
-| 🟠 **ESDS STAGE** | `1.7.57` | `10070` | Release | 14 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1WGKX0SXTGcJQN9iWTtf3TGUoV3OzXkrN/view?usp=sharing) |
+| 🟠 **ESDS STAGE** | `1.7.58` | `10070` | Release | 15 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1KkKY1Td7vUevh7f0c2GTyt_WT9gdWYXB/view?usp=drive_link) |
 
 
 ### VOPA-AWS
@@ -65,7 +65,7 @@ flowchart LR
 
 **App Version:** 1.7.54 and later fixes
 **Applies to:** 🔵 VOPA-AWS and 🟣 ESDS (Swaraj Cloud) Kubernetes (same content)
-**Source:** Commit log, 1 Nov – 9 Nov 2026
+**Source:** Commit log, 1 Nov – 15 Nov 2026
 
 > Screen names are taken from the commit log. The app was not run to write these notes, so confirm screen names while testing.
 
@@ -78,9 +78,14 @@ flowchart LR
 - Student Timeline - Added separate tabs for last & current academic year
 - Renamed tab My School as "तुमच्या शाळेची माहिती"
 - UI improvements of 6U form upload
+- **Home-learning icon.** The 1st, 4th and 7th student in the list get a Home icon next to the History icon on each subject. Tapping it shows a message that the student is using home learning features (English and Marathi).
+- **Assessment audit notice.** For the same students, saving an assessment now shows a 5-second dialog with an animation. It says the record will be used for further audit (English and Marathi). Nothing in the list or on the assessment page shows which students are selected.
+- **Class cards.** Each class card now has a light shadow and a blue stripe on the left edge, so the cards stand apart from each other.
+- **AI Practice.** The mascot's help note now has a title: "What's the use of this feature?!" (English and Marathi).
+- **Assign Teachers fix.** After a headmaster assigns a class to a teacher, the teacher details on the screen now refresh straight away. Before, the old details stayed until the screen was reopened.
 
 1. **Pictures, audio and animations load differently.** The app's way of fetching media (images, audio, animations) was rebuilt. The old loaders were deleted. This touches almost every screen, so it carries the most risk.
-2. **Server-down handling is new.** The app now checks server health and shows a maintenance screen or a warning pop-up when something is down.
+2. **Server status check (revised).** The app now reads one status service instead of several separate health checks. It shows the maintenance screen only when the service reports maintenance, with the message and start time (IST) from the service. If only one service is down (for example Redis or Postgres), the app stays open and a pop-up appears when you use the affected feature. If the status can't be checked, the app stays open and shows a Retry message.
 3. **Assessments.** Absent students show in red. Teachers can open an absent student's record. Offline schools now see the question on the teacher-selection screen. Completion is confirmed after the check finishes in the background. Multiple-choice labels were renamed to "पर्यायी प्रश्न" and "बहुपर्यायी प्रश्न". Escaped line breaks (`\n`) no longer show in question text.
 4. **Blogs.** Fixed the last Marathi word being cut off on Android. Blog cards, list and pages use the new image loader.
 5. **Smaller items.** Image compression was improved. The Games web page now works with the new test servers. The About Us links and the admin School Info page were fixed. The home banner no longer re-renders in a loop. The maintenance animation was fixed.
@@ -102,11 +107,11 @@ flowchart LR
 
 **3. Maintenance and server-down screens**
 
-- With the live API down, the app should show the maintenance screen.
-- With the database down, it should also show maintenance.
-- With the main data store or cache down, it should show a global pop-up.
-- Once the service is back, the app should return to normal without a reinstall.
-- The maintenance animation should play.
+- With the service reporting maintenance, the maintenance screen shows the configured message and the start time, for example "13 November 2026, 10:45 AM IST". The time doesn't change during the outage.
+- When one service such as Redis or Postgres is down, the app stays open. Opening Login (Redis) or Student Timeline (Postgres) shows a pop-up with the service's message and start time.
+- When the status service can't be reached, the app stays open and shows a Retry message once. It doesn't repeat on every screen.
+- After recovery, the maintenance screen clears by itself within about 15 seconds. No reinstall is needed.
+- The maintenance animation plays.
 
 **4. Assessments (teacher and admin flows)**
 
@@ -126,6 +131,14 @@ flowchart LR
 - **Admin School Info** page works.
 - **Home banner** loads, and also behaves when the banner list fails to load.
 - **Photo uploads** still work after the compression change. Check clarity and upload time.
+
+**6. New test items**
+
+- **Home icon:** appears only on students 1, 4 and 7 of the list, comes before the History icon, and the message shows the first name in both languages.
+- **Audit dialog:** appears only after the final save for those students, stays up for 5 seconds, then returns to the list with the result applied. Check that pressing back during the dialog doesn't lose the result.
+- **Class cards:** the shadow and blue stripe look right on both Android and iOS.
+- **Assign Teachers:** after assigning a class, the teacher details update without leaving the screen.
+- **AI Practice:** the mascot note shows the title in both languages.
 
 #### Test On
 
