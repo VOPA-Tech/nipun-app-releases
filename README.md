@@ -18,7 +18,7 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 |---|---|---|---|---|---|---|
 | 🟣 **ESDS DEV** | `2.0.0` | `10070` | Release | 19 Nov 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1gq1G2kQi1Dm4OMeqyYHfrcKsiokhwWbH/view?usp=sharing) |
 | 🟠 **ESDS STAGE** | `2.0.0` | `100070` | Release | 19 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1yDHg8Rk0A2iD_YWfZP82kIa8TQ09th7H/view?usp=drive_link) |
-| 🟢 **ESDS PROD** | `2.0.0` | `100070` | Release | 19 Nov 2026 | 🔍 Production | [⬇️ Download](https://drive.google.com/file/d/1kEa9XPqqW_oJYu5g1BihuVuqlUj8GIjm/view?usp=sharing) |
+| 🟢 **ESDS PROD** | `2.0.0` | `100072` | Release | 20 Nov 2026 | 🔍 Production | [⬇️ Download](https://drive.google.com/file/d/10urc7YGU9jvudmSaNxRHm25SVGANJaDQ/view?usp=drive_link) |
 
 
 ### VOPA-AWS
@@ -64,9 +64,9 @@ flowchart LR
 
 ## Release Notes
 
-**App Version:** 1.7.54 and later fixes
+**App Version:** 2.0.0 and later fixes
 **Applies to:** 🔵 VOPA-AWS and 🟣 ESDS (Swaraj Cloud) Kubernetes (same content)
-**Source:** Commit log, 1 Nov – 15 Nov 2026
+**Source:** Commit log, 20 Nov 2026
 
 > Screen names are taken from the commit log. The app was not run to write these notes, so confirm screen names while testing.
 
