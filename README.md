@@ -17,7 +17,7 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
 | 🟣 **ESDS DEV** | `2.0.0` | `10070` | Release | 19 Nov 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1gq1G2kQi1Dm4OMeqyYHfrcKsiokhwWbH/view?usp=sharing) |
-| 🟠 **ESDS STAGE** | `2.0.0` | `100070` | Release | 19 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1yDHg8Rk0A2iD_YWfZP82kIa8TQ09th7H/view?usp=drive_link) |
+| 🟠 **ESDS STAGE** | `2.0.0` | `100072` | Release | 21 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/19CTRr_JGmMfJeZY7kDfkhLUXozpVp4Kz/view?usp=drive_link) |
 | 🟢 **ESDS PROD** | `2.0.0` | `100072` | Release | 20 Nov 2026 | 🔍 Production | [⬇️ Download](https://drive.google.com/file/d/10urc7YGU9jvudmSaNxRHm25SVGANJaDQ/view?usp=drive_link) |
 
 
@@ -187,7 +187,7 @@ For every new build:
 
 ```bash
 git add README.md
-git commit -m "(version - date): release/debug update"
+git commit -m "(version - date): ESDS/AWS DEV/STAGE/PROD release/debug update"
 git push
 ```
 
