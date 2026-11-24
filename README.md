@@ -17,8 +17,8 @@ Central release index for the **NIPUN Android Application** across DEV, STAGE, a
 | Environment | Version | Build | Release Type | Build Date | Status | APK |
 |---|---|---|---|---|---|---|
 | 🟣 **ESDS DEV** | `2.0.0` | `10070` | Release | 19 Nov 2026 | 🧪 Development | [⬇️ Download](https://drive.google.com/file/d/1gq1G2kQi1Dm4OMeqyYHfrcKsiokhwWbH/view?usp=sharing) |
-| 🟠 **ESDS STAGE** | `2.0.1` | `100073` | Release | 23 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/11X2RRhIP9h9tdpWzgEc5226ilGbXIs6H/view?usp=drive_link) |
-| 🟢 **ESDS PROD** | `2.0.0` | `100072` | Release | 20 Nov 2026 | 🔍 Production | [⬇️ Download](https://drive.google.com/file/d/10urc7YGU9jvudmSaNxRHm25SVGANJaDQ/view?usp=drive_link) |
+| 🟠 **ESDS STAGE** | `2.0.1` | `100073` | Release | 24 Nov 2026 | 🔍 Testing | [⬇️ Download](https://drive.google.com/file/d/1tQ9qFJtzgBDFCJrp-OAppGaaOTvxvFW-/view?usp=drive_link) |
+| 🟢 **ESDS PROD** | `2.0.1` | `100073` | Release | 24 Nov 2026 | 🔍 Production | [⬇️ Download](https://drive.google.com/file/d/1HMDQ5YnBpDQfyV7yzjuwQ3dPHIU0zpkV/view?usp=drive_link) |
 
 
 ### VOPA-AWS
@@ -62,7 +62,7 @@ flowchart LR
 
 ---
 
-## Release Notes
+## Release Notes: ESDS STAGE
 
 **App Version:** 2.0.1
 **Applies to:** 🟠 ESDS (Swaraj Cloud) Kubernetes STAGE
@@ -103,6 +103,48 @@ flowchart LR
 - Minor UI change on the Assign Teachers screen.
 - Translation updates in English and Marathi. Check for missing, truncated or wrong strings, especially on the About Us, Assign Teachers and profile screens.
 - The parent profile gate and utils changed. Test the parent profile selection flow.
+
+**5. Onboarding screens: UI fixes**
+
+- Fixed UI issues on the onboarding screens. Check them on different screen sizes.
+
+**6. Assessment screens: UI fixes**
+
+- Fixed UI issues on the assessment screens. Check them on different screen sizes.
+
+**7. Assessment result: WPM renamed to CWPM**
+
+- The Speed result in the assessment result now shows CWPM instead of WPM.
+- Test: Complete an assessment and confirm the Speed result shows CWPM in both English and Marathi.
+
+**8. Parent Dashboard: first name only**
+
+- The Parent Dashboard now displays only the first name. Names in uppercase are shown in title case.
+- Test: Open the Parent Dashboard with a name stored in uppercase (for example, "RAHUL KUMAR") and confirm it shows "Rahul".
+
+**9. WebView screens: confirmation modal replaces native alerts**
+
+- Native Alert dialogs in GamesWebViewScreen and WebViewScreen are replaced with the global confirmation modal.
+- Test: Trigger a confirmation in a game and in a web page. Confirm the global modal appears, and that both confirm and cancel work.
+
+---
+
+## Release Notes: ESDS PROD
+
+**Applies to:** 🟢 ESDS (Swaraj Cloud) Kubernetes PROD
+
+**1. Nudges**
+
+- Added a nudges list and nudges in the drawer.
+
+**2. About Us**
+
+- The About Us PDFs are updated, and a new PDF viewer is added.
+- Test: Open each PDF from About Us and confirm it loads, scrolls and closes correctly.
+
+**3. Onboarding screens: UI changes**
+
+- Made UI changes on the onboarding screens.
 
 ---
 
